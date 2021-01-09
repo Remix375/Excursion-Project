@@ -2,6 +2,18 @@ body {
     background-color: black;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* this will hide the scrollbar in mozilla based browsers */
+    overflow: -moz-scrollbars-none;
+    /* this will hide the scrollbar in internet explorers */
+    -ms-overflow-style: none;
+
+
+
+}
+
+::-webkit-scrollbar{
+    width: 0 !important;
+    display: none;     
 }
 
 h1 {
@@ -16,7 +28,12 @@ a {
 
 footer {
     text-align: right;
+    
+}
+
+.gray {
     color: gray;
+    font-size: 21px;
 }
 
 #title {
